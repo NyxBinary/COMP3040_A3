@@ -3,6 +3,12 @@
 
 # Endpoint with Parameters
 
+- bus
+	- bus id
+	- date to retrieve schedule
+- stop
+	- stop id
+	- date to retrieve schedule
 
 # Description of Resources
 
@@ -11,11 +17,11 @@
 	resources: [
 		{
 			"name": "bus",
-			"description": "Information regarding buses in Winnipeg."
+			"description": "Information regarding bus schedules in Winnipeg."
 		},
 		{
 			"name": "stop",
-			"description": "Information regarding bus stops in Winnipeg."
+			"description": "Information regarding bus stop schedules in Winnipeg."
 		}
 	]
 }
