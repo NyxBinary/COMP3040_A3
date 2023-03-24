@@ -3,12 +3,10 @@
 
 # Endpoint with Parameters
 
-- bus
-	- bus id
-	- date to retrieve schedule
-- stop
-	- stop id
-	- date to retrieve schedule
+- /bus (GET the list of existing busses as an array)
+	- /{bus id}/{date} (added parameters to GET the schedule of the bus on the specified date, date as DDMMYYYY format)
+- /stop (GET the list of existing bus stops as an array)
+	- /{bus stop id}/{date} (addaed parameters to GET the bus stop schedule on the specified date, date as DDMMYYYY format)
 
 # Description of Resources
 
