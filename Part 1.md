@@ -1,5 +1,6 @@
 # API Description
 
+This is a sample Manitoba Bus Service Server based on the OpenAPI 3.0 specification. This server offers a free API that provides bus and bus stop schedules in Manitoba for a given day. The API has endpoints that list bus schedules and bus stop locations and schedules based on the parameters provided.
 
 # Endpoint with Parameters
 
@@ -15,11 +16,11 @@
 	resources: [
 		{
 			"name": "bus",
-			"description": "Information regarding bus schedules in Winnipeg."
+			"description": "Information regarding bus schedules in Manitoba."
 		},
 		{
 			"name": "stop",
-			"description": "Information regarding bus stop schedules in Winnipeg."
+			"description": "Information regarding bus stop schedules in Manitoba."
 		}
 	]
 }
