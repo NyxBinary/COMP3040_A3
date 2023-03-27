@@ -27,3 +27,56 @@ This is a sample Manitoba Bus Service Server based on the OpenAPI 3.0 specificat
 ```
 
 # Sample Request
+* To get the list of existing bus stops, send a GET request to:
+```
+GET /stop
+```
+#### If the request is successful, the API will return a JSON object with an array of bus stops. For example:
+```json
+{
+    "stops": [
+        {
+            "id": "1",
+            "name": "University of Manitoba Bus station",
+            "description": "This is a bus stop at the University of Manitoba Fort Garry campus"
+        },
+        {
+            "id": "2",
+            "name": "Portage Ave. and Main St.",
+            "description": "This is a bus stop on Portage Ave. and Main St."
+        }
+    ]
+}
+```
+
+---
+
+* To get the schedule for bus stop with id "1234" on March 27th, 2023, send a GET request to:
+```
+GET /stop/1234/27032023
+```
+#### If the request is successful, the API will return a JSON object with the bus stop schedule for the specified date
+```json
+
+{
+    "stop_id": "1234",
+    "date": "27032023",
+    "schedule": [
+        {
+            "bus_id": "662",
+            "arrival_time": "09:00",
+            "departure_time": "09:01"
+        },
+        {
+            "bus_id": "672",
+            "arrival_time": "9:15",
+            "departure_time": "9:16"
+        },
+        {
+            "bus_id": "75",
+            "arrival_time": "11:00",
+            "departure_time": "11:01"
+        }
+    ]
+}
+```
