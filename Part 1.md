@@ -1,6 +1,6 @@
 # API Description
 
-This is a sample Manitoba Bus Service Server based on the OpenAPI 3.0 specification. This server offers a free API that provides bus and bus stop schedules in Manitoba for a given day. The API has endpoints that list bus schedules and bus stop locations and schedules based on the parameters provided.
+This is an example Manitoba Bus Service API formatted for OpenAPI 3.0. This service offers an API that provides bus and bus stop schedules in Manitoba for a given day, free of charge. This API has endpoints that list bus schedules, in addition to bus stop locations and associated schedules based on the parameters provided.
 
 # Endpoint with Parameters
 
@@ -26,12 +26,16 @@ This is a sample Manitoba Bus Service Server based on the OpenAPI 3.0 specificat
 }
 ```
 
-# Sample Request
-* To get the list of existing bus stops, send a GET request to:
+# Sample Requests
+
+* To get the list of existing bus stops, a user can send a GET request with the following format:
+
 ```
 GET /stop
 ```
-#### If the request is successful, the API will return a JSON object with an array of bus stops. For example:
+
+Upon a successful request, the API will return a JSON object with an array of bus stops.
+
 ```json
 {
     "stops": [
@@ -51,16 +55,19 @@ GET /stop
 
 ---
 
-* To get the schedule for bus stop with id "1234" on March 27th, 2023, send a GET request to:
+* To get the schedule for bus stop with id "1234" on March 27th, 2023, a user can send a GET request with the following format:
+
 ```
-GET /stop/1234/27032023
+GET /stop/1234/27-03-2023
 ```
-#### If the request is successful, the API will return a JSON object with the bus stop schedule for the specified date
+
+Upon a successful request, the API will return a JSON object with the bus stop schedule for the date specified.
+
 ```json
 
 {
     "stop_id": "1234",
-    "date": "27032023",
+    "date": "27-03-2023",
     "schedule": [
         {
             "bus_id": "662",
