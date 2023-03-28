@@ -5,9 +5,9 @@ This is an example Manitoba Bus Service API formatted for OpenAPI 3.0. This serv
 # Endpoint with Parameters
 
 - /bus (GET the list of existing busses as an array)
-	- /{bus id}/{date} (added parameters to GET the schedule of the bus on the specified date, date as DDMMYYYY format)
+	- /{bus id}/{date} (added parameters to GET the schedule of the bus on the specified date, date as DD-MM-YYYY format)
 - /stop (GET the list of existing bus stops as an array)
-	- /{bus stop id}/{date} (addaed parameters to GET the bus stop schedule on the specified date, date as DDMMYYYY format)
+	- /{bus stop id}/{date} (addaed parameters to GET the bus stop schedule on the specified date, date as DD-MM-YYYY format)
 
 # Description of Resources
 
